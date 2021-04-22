@@ -33,7 +33,8 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/siswa', 'SiswaController::index');
+$routes->get('/siswa/edit/(:segment)', 'Siswa::edit/$1');
+
 
 /*
  * --------------------------------------------------------------------
